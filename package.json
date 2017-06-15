@@ -1,0 +1,35 @@
+{
+  "name": "cherish-mock",
+  "version": "1.0.0",
+  "description": "mock server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xieQin/cherish-mock.git"
+  },
+  "keywords": [
+    "mock"
+  ],
+  "author": "xieqin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xieQin/cherish-mock/issues"
+  },
+  "homepage": "https://github.com/xieQin/cherish-mock#readme",
+  "dependencies": {
+    "babel-register": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
+  }
+}
